@@ -243,8 +243,3 @@ h2 {
         width: 100%;
     }
 }
-@media (max-width: 375px) {
-    .box {
-        display: block;
-    }
-}
