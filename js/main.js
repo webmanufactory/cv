@@ -1,13 +1,8 @@
-$(document).ready(function() { 
-    $("A.trigger").toggle(function() { 
-      $("DIV.box").fadeIn();
-      return false;
-    },  
-    function() { 
-      $("DIV.box").fadeOut();
-      return false;
-    });
-  });
+$(document).ready(function() {
+	$('.blog').on('click', '.button', function() {
+		$(this).toggleClass('open').siblings('.box').slideToggle('slow');
+	});
+});
 
   $(function(){
     $("[data-tooltip]").mousemove(function (eventObject) {
